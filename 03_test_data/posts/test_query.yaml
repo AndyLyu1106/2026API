@@ -1,0 +1,14 @@
+- title: "成功获取指定post信息"
+  post_id: 1
+  expected_status: 200
+  expected_title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+
+- title: "成功获取另一个post信息"
+  post_id: 2
+  expected_status: 200
+  expected_title: "qui est esse"
+
+- title: "查询不存在的post信息"
+  post_id: 99999
+  expected_status: 404
+  expected_title: null

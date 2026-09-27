@@ -1,0 +1,14 @@
+- title: "成功获取指定用户信息"
+  user_id: 1
+  expected_status: 200
+  expected_name: "Leanne Graham"
+
+- title: "成功获取另一个用户信息"
+  user_id: 2
+  expected_status: 200
+  expected_name: "Ervin Howell"
+
+- title: "查询不存在的用户ID"
+  user_id: 99999
+  expected_status: 404
+  expected_name: null

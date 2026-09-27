@@ -1,0 +1,17 @@
+- title: "全量更新用户信息 (PUT)"
+  user_id: 1
+  method: "PUT"
+  payload:
+    name: "Leanne Graham (Updated)"
+    username: "Bret"
+    email: "updated@biz.org"
+  expected_status: 200
+  expected_name: "Leanne Graham (Updated)"
+
+- title: "局部更新用户邮箱 (PATCH)"
+  user_id: 1
+  method: "PATCH"
+  payload:
+    email: "patch_email@biz.org"
+  expected_status: 200
+  expected_email: "patch_email@biz.org"

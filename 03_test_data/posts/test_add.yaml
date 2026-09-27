@@ -1,0 +1,17 @@
+- title: "成功新增posts"
+  payload:
+    userId: "88"
+    title: "just API test"
+    body: "just API test from Andy"
+  expected_status: 201
+  expected_title: "just API test"
+  expected_body: "just API test from Andy"
+
+- title: "异常新增-提交空posts"
+  payload:
+    userId: ""
+    title: ""
+    body: ""
+  expected_status: 201
+  expected_title: ""
+  expected_body: ""

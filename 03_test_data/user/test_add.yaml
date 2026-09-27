@@ -1,0 +1,14 @@
+- title: "成功新增用户"
+  payload:
+    name: "張三"
+    username: "zhangsan"
+    email: "zhangsan@example.com"
+  expected_status: 201
+  expected_name: "張三"
+
+- title: "异常新增-提交空用户名"
+  payload:
+    name: ""
+    username: ""
+    email: "test@example.com"
+  expected_status: 201 # JSONPlaceholder 作为 Mock 服务统一返回 201

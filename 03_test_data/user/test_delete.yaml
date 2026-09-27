@@ -1,0 +1,7 @@
+- title: "成功删除指定用户"
+  user_id: 1
+  expected_status: 200
+
+- title: "删除不存在的用户"
+  user_id: 9999
+  expected_status: 200 # Mock 服务对任何 ID 的 DELETE 都会返回 200
